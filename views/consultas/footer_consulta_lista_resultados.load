@@ -1,0 +1,12 @@
+<strong>Resultados: </strong><br />
+{{if resultados_mensagem != None:}}
+  <p>
+    {{=resultados_mensagem}}
+  </p>
+{{else:}}
+  {{for r in resultados:}}
+    <p>
+      <a class="btn btn-link" href="{{=URL('consultas','editaresultado', vars={'r': r.id})}}" ><strong>{{=r.resultado}}</strong></a>
+    </p>
+  {{pass}}
+{{pass}}

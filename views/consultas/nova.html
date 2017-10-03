@@ -1,0 +1,31 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+  <div class="container">
+    <h3> Nova Consulta</h3>
+    <button onclick="goBack()">Voltar</button>
+  </div>
+  <script>
+  function goBack() {
+      window.history.back()
+  }
+  </script>
+{{end}}
+
+{{block principal}}
+	<div class="container container-fluid main-container">
+
+	 	{{=form}}
+    <script type="text/javascript" charset=”utf-8″>
+      jQuery(document).ready(function(){
+        jQuery('#exame_cep').blur(function(){
+          jQuery('#exame_endereco').val('Carregando');
+          jQuery('#exame_bairro').val('Carregando');
+          jQuery('#exame_cidade').val('Carregando');
+          jQuery('#exame_complemento').val('Carregando');
+          ajax('{{=URL('endereco_auto', 'preenche_cep')}}', ['cep','dbperfil'], ':eval');
+        });
+      });
+    </script>
+  </div>
+{{end}}

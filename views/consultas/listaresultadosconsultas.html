@@ -1,0 +1,22 @@
+{{extend 'layout.html'}}
+
+<div class="container">
+  <h2>Resultado de Consulta</h2>
+
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Resultado</th>
+        <th>Receita</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{for r in resultados:}}
+        <tr>
+          <td><a href="{{=URL('editaresultado',vars=dict(r=r.id))}}">{{=r.resultado}}</a></td>
+          <td></td>
+        </tr>
+      {{pass}}
+    </tbody>
+  </table>
+</div>

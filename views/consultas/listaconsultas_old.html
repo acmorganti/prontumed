@@ -1,0 +1,111 @@
+{{extend 'layout.html'}}
+{{=response.flash}}
+{{block head}}
+  <style>
+  #lista_index {
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  </style>
+{{end}}
+
+<div class="container">
+  <div class="container row" style="margin-top: -25px">
+    <h2>Consultas</h2>
+    <div class="row">
+      <div class="container col-md-2">
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#divbtnnovaconsulta">Nova Consulta</button>
+        <div id="divbtnnovaconsulta" class="collapse">
+          {{=LOAD('consultas','nova.load',ajax=True, vars={'reload_div': "novaconsulta"},target="formnova")}}
+          <div id="formnova">
+          </div>
+        </div>
+      </div>
+
+      <form class="form-inline" action="/prontumed/consultas/listaconsultas/" method="get">
+          <div class="form-group">
+            <!--<a class="btn btn-primary" href="{{=URL('consultas','nova')}}" role="button">Nova Consulta</a>-->
+            Filtrar por:
+            <select name = "f">
+              {{for l in grupos:}}
+                  {{if l == status:}}
+                    <option value="{{=l}}" selected>{{=l}}</option>
+                  {{else:}}
+                    <option value="{{=l}}">{{=l}}</option>
+                  {{pass}}
+              {{pass}}
+            </select>
+            <input type="submit" value="Enviar" class="btn btn-success">
+          </div>
+      </form>
+
+    </div>
+  </div>
+
+  {{contador = 0}}
+  <div id="novaconsulta">
+  	{{for c in consultas:}}
+    <div id='lista_index'>
+      {{contador += 1}}
+      {{divlista = "lista%s" %(str(contador))}}
+      {{divnovoresultado = "novoresultado%s" %(str(contador))}}
+      {{divlistaexames = "listaexames%s" %(str(contador))}}
+      {{divnovoexame = "novoexame%s" %(str(contador))}}
+      <a hfef="{{=URL('consultas','edita',vars={'c': c.id})}}">{{=c.dataconsulta}}</a>
+      <a href="{{=URL('consultas','edita',vars={'c': c.id})}}">{{=c.motivo}}</a>
+      <a class="btn-danger" href="{{=URL('consultas','edita',vars={'c': c.id})}}">
+        Editar
+      </a>
+      <strong>Situação: {{=c.status}}</strong><br />
+      Local: {{=c.endereco}} - {{=c.cidade}}
+
+      <!-- Resultados -->
+      {{=LOAD('consultas','footer_consulta_lista_resultados.load',ajax=True,
+              vars={'c': c.id}, target=divlista)}}
+
+        <div id="{{=divlista}}">
+        </div>
+
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="{{='#fr'+str(divnovoresultado)}}">Novo Resultado</button>
+
+        <div id="{{='fr'+str(divnovoresultado)}}" class="collapse">
+          {{=LOAD('consultas','footer_consulta_novo_resultado.load',ajax=True,
+                  vars={'c': c.id, 'reload_div': divlista}, target=divnovoresultado)}}
+          <div id="{{=divnovoresultado}}" class="collapse">
+          </div>
+        </div>
+
+        <br />
+
+      <!-- Fim Resultados -->
+
+      <!-- Exames -->
+      {{=LOAD(c='consultas',f='footer_consulta_lista_exames.load',ajax=True,
+              vars={'c': c.id}, target=divlistaexames)}}
+
+        <div id="{{=divlistaexames}}">
+        </div>
+
+        <button type="button" class="btn btn-info" data-toggle="collapse"
+            data-target="{{='#fr'+str(divnovoexame)}}">
+          Novo Exame
+        </button>
+
+        <div id="{{='fr'+str(divnovoexame)}}" class="collapse">
+          {{=LOAD('consultas','footer_consulta_novo_exame.load',ajax=True,
+                  vars={'c': c.id, 'reload_div': divlistaexames}, target=divnovoexame)}}
+          <div id="{{=divnovoexame}}" class="collapse">
+          </div>
+        </div>
+
+        <br />
+
+      <!-- Fim Exames -->
+
+    {{pass}}
+    </div>
+  </div>
+</div>

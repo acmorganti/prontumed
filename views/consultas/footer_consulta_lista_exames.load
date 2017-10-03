@@ -1,0 +1,12 @@
+<strong>Exames: </strong><br />
+{{if exames_mensagem != None:}}
+  <p>
+    {{=exames_mensagem}}
+  </p>
+{{else:}}
+  {{for e in exames:}}
+    <p>
+      <a class="btn btn-link" href="{{=URL('exames','editaexame', vars={'e': e.id})}}" ><strong>{{=e.exame}}</strong></a>
+    </p>
+  {{pass}}
+{{pass}}

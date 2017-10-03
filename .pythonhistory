@@ -1,0 +1,814 @@
+perfil = db(db.patient.auth_id == 1)
+print peril.count()
+print perfil.count()
+perfil=db.patient.insert(auth_id=1)
+print db(db.patient).last().auth_id
+print db(db.patient).select().last().auth_id
+print db(db.patient).select()
+print db(db.patient).select().last
+db.rollback()
+perfil=db(db.patient.auth_id==1)
+print perfil.count()
+a=dict(x='1')
+a
+b={x: '1'}
+b={'x': '1'}
+vars={'d':1}
+type(vars)
+tables = { 'patient': 'Dados Pessoais',
+               'medical_profile': 'Dados Pessoais',
+               'endereco': 'Endereço'}
+tables
+perfil=tables['table']
+table='patient'
+perfil=tables['table']
+perfil=tables[table]
+perfil
+table='endereco'
+print tables[table]
+tables = { 'patient': 'Dados Pessoais',
+               'medical_profile': 'Dados Pessoais',
+               'endereco': 'Endereço'}
+table
+nome_perfil=tables[table]
+nome_perfil
+table=db(table)
+table
+dir(table)
+dir(table).as_json()
+dir(table).as_json
+dir(table)
+table.as_json()
+dir(table)
+table.name
+table='patient'
+tabela=db(db[table])
+tabela
+tabela[0]
+tabela.fields
+dir(tabela)
+tabela
+tabela[0]
+tabela.select()
+tabela.select()[0]
+user=tabela.auth_id==2
+user=db(db[tabela].auth_id == 8).select().first()
+user=db(db[table].auth_id == 8).select().first()
+user
+user.len
+len(user)
+uer
+user
+user=db(db[table].auth_id == 8).select().first().as_list()
+user=db(db[table].auth_id == 8).select().first().as_list
+user=db(db[table].auth_id == 8).as_list().first()
+user=db(db[table].auth_id == 8).select().first().as_list()
+user=db(db[table].auth_id == 8).select().first()
+user=db(db[table].auth_id == 8).select()
+user[0].as_list()
+user.as_list()
+user=db(db[table].auth_id == 8).select().as_list()
+usr
+user
+user[0]
+user[1]
+user[0]
+user[0][0]
+user[0]
+table=db['patient']
+table
+perfil=db(table.auth_id==2)
+perfil
+perfil.first()
+perfil.select().first()
+print perfil.select().first()
+def patient_vazio():
+    patient = db(db.patient.auth_id == auth.user.id).select().first()
+    if patient == None:
+        return False
+    if patient.nome == None or \
+       patient.nome_pai == None or \
+       patient.nome_mae == None or \
+       patient.contato == None or \
+       patient.fone_contato == None or \
+       patient.fone_fixo == None or \
+       patient.fone_celular == None or \
+       patient.dt_nascimento == None or \
+       patient.sexo == None or \
+       patient.profissao == None:
+        return True
+    else:
+        return False
+user = auth.login_bare('teste2@teste.com','123456')
+auth.user.id
+print patient_vazio()
+def medical_profile_vazio()
+    medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+    if medical_profile == None:
+        return True
+    if medical_profile.alergia == None or \
+        medical_profile.coracao == None or \
+        medical_profile.glutten == None or \
+        medical_profile.lactose == None or \
+        medical_profile.deficiencia == None or \
+        medical_profile.desmaio == None or \
+        medical_profile.medicacao == None or \
+        medical_profile.diabetes == None or \
+        medical_profile.tratadiabetes == None or \
+        medical_profile.coluna == None or \
+        medical_profile.fratura == None or \
+        medical_profile.cirurgia == None or \
+        medical_profile.peso == None or \
+        medical_profile.tratamento == None or \
+        medical_profile.vacina == None:
+            return True
+    else:
+            return False
+def medical_profile_vazio()
+    medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+    if medical_profile == None:
+        return True
+    if medical_profile.alergia == None or \
+       medical_profile.coracao == None or \
+       medical_profile.glutten == None or \
+       medical_profile.lactose == None or \
+       medical_profile.deficiencia == None or \
+       medical_profile.desmaio == None or \
+       medical_profile.medicacao == None or \
+       medical_profile.diabetes == None or \
+       medical_profile.tratadiabetes == None or \
+       medical_profile.coluna == None or \
+       medical_profile.fratura == None or \
+       medical_profile.cirurgia == None or \
+       medical_profile.peso == None or \
+       medical_profile.tratamento == None or \
+       medical_profile.vacina == None:
+        return True
+    else:
+        return False
+def medical_profile_vazio()
+    medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+    if medical_profile == None:
+        return True
+    if medical_profile.alergia == None or \
+       medical_profile.coracao == None or \
+       medical_profile.glutten == None or \
+       medical_profile.lactose == None or \
+       medical_profile.deficiencia == None or \
+       medical_profile.desmaio == None or \
+       medical_profile.medicacao == None or \
+       medical_profile.diabetes == None or \
+       medical_profile.tratadiabetes == None or \
+       medical_profile.coluna == None or \
+       medical_profile.fratura == None or \
+       medical_profile.cirurgia == None or \
+       medical_profile.peso == None or \
+       medical_profile.tratamento == None or \
+       medical_profile.vacina == None:
+        return True
+    else:
+        return Falsedef medical_profile_vazio():
+    medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+    if medical_profile == None:
+        return True
+    if medical_profile.alergia == None or \
+       medical_profile.coracao == None or \
+       medical_profile.glutten == None or \
+       medical_profile.lactose == None or \
+       medical_profile.deficiencia == None or \
+       medical_profile.desmaio == None or \
+       medical_profile.medicacao == None or \
+       medical_profile.diabetes == None or \
+       medical_profile.tratadiabetes == None or \
+       medical_profile.coluna == None or \
+       medical_profile.fratura == None or \
+       medical_profile.cirurgia == None or \
+       medical_profile.peso == None or \
+       medical_profile.tratamento == None or \
+       medical_profile.vacina == None:
+        return True
+    else:
+        return False
+def medical_profile_vazio():
+    medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+    if medical_profile == None:
+        return True
+    if medical_profile.alergia == None or \
+       medical_profile.coracao == None or \
+       medical_profile.glutten == None or \
+       medical_profile.lactose == None or \
+       medical_profile.deficiencia == None or \
+       medical_profile.desmaio == None or \
+       medical_profile.medicacao == None or \
+       medical_profile.diabetes == None or \
+       medical_profile.tratadiabetes == None or \
+       medical_profile.coluna == None or \
+       medical_profile.fratura == None or \
+       medical_profile.cirurgia == None or \
+       medical_profile.peso == None or \
+       medical_profile.tratamento == None or \
+       medical_profile.vacina == None:
+        return True
+    else:
+        return False
+user = auth.login_bare('teste2@teset.com','123456')
+auth
+auth.user
+auth.user.id
+user = auth.login_bare('teste2@teset.com','123456')
+auth.user.id
+auth.user.email
+user = auth.login_bare('teste2@teste.com','123456')
+auth.user.id
+def medical_profile_vazio():
+    medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+    if medical_profile == None:
+        return True
+    if medical_profile.alergia == None or \
+       medical_profile.coracao == None or \
+       medical_profile.glutten == None or \
+       medical_profile.lactose == None or \
+       medical_profile.deficiencia == None or \
+       medical_profile.desmaio == None or \
+       medical_profile.medicacao == None or \
+       medical_profile.diabetes == None or \
+       medical_profile.tratadiabetes == None or \
+       medical_profile.coluna == None or \
+       medical_profile.fratura == None or \
+       medical_profile.cirurgia == None or \
+       medical_profile.peso == None or \
+       medical_profile.tratamento == None or \
+       medical_profile.vacina == None:
+        return True
+    else:
+        return False
+print medical_profile_vazio()
+def medical_profile_vazio():
+    medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+    if medical_profile == None:
+        print 'return 1'
+        return True
+    if medical_profile.alergia == None or \
+       medical_profile.coracao == None or \
+       medical_profile.glutten == None or \
+       medical_profile.lactose == None or \
+       medical_profile.deficiencia == None or \
+       medical_profile.desmaio == None or \
+       medical_profile.medicacao == None or \
+       medical_profile.diabetes == None or \
+       medical_profile.tratadiabetes == None or \
+       medical_profile.coluna == None or \
+       medical_profile.fratura == None or \
+       medical_profile.cirurgia == None or \
+       medical_profile.peso == None or \
+       medical_profile.tratamento == None or \
+       medical_profile.vacina == None:
+        print 'return 2'
+        return True
+    else:
+        return False
+print medical_profile_vazio()
+def endereco_vazio():
+    endereco = db(db.endereco.auth_id == auth.user.id).select().first()
+    if endereco == None:
+        return True
+    if endereco.nome_endereco == None or \
+       endereco.cep == None or \
+       endereco. == None or \
+       endereco.numero == None or \
+       endereco.mplemento == None or \
+       endereco.estado == None:
+        return True
+    else:
+        return False
+def endereco_vazio():
+    endereco = db(db.endereco.auth_id == auth.user.id).select().first()
+    if endereco == None:
+        return True
+    if endereco.nome_endereco == None or \
+       endereco.cep == None or \
+       endereco.endereco == None or \
+       endereco.numero == None or \
+       endereco.mplemento == None or \
+       endereco.estado == None:
+        return True
+    else:
+        return False
+print endereco_vazio()
+from perfis_vazios import *
+db
+print db
+print patient_vazio(db)
+user=auth.login_bare('teste2@teste.com','123456')
+auth
+auth.user.id
+from perfis_vazios import *
+patient_vazio(db, auth)
+medical_profile_vazio(db, auth)
+endereco_vazio(db, auth)
+from perfils_vazios import *
+from perfis_vazios import *
+auth
+patient = db(db.patient.auth_id == auth.user.id).select().first()
+medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+endereco = db(db.endereco.auth_id == auth.user.id).select().first()
+print patient_vazio(patient)
+from perfis_vazios import *
+patient = db(db.patient.auth_id == auth.user.id).select().first()
+medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+endereco = db(db.endereco.auth_id == auth.user.id).select().first()
+user=login_bare('teste2@teste.com','123456')
+user=auth.login_bare('teste2@teste.com','123456')
+patient = db(db.patient.auth_id == auth.user.id).select().first()
+medical_profile = db(db.medical_profile.auth_id == auth.user.id).select().first()
+endereco = db(db.endereco.auth_id == auth.user.id).select().first()
+print patient_vazio(patient)
+import datetime
+x = datetime.date('2000','01','01')
+datetime
+dir(datetime)
+dir(datetime.date)
+hoje=datetime.date.today()
+hoje
+x=datetime.date(2001,1,1)
+x
+sexo = 'Masculino'
+sexo = 'Feminino' if sexo == 'Masculino' else 'Feminino'
+sexo
+sexo = 'Feminino' if sexo == 'Masculino' else 'Feminino'
+sexo
+sexo = 'Feminino' if sexo == 'Masculino' else 'Masculino'
+sexo
+sexo = 'Feminino' if sexo == 'Masculino' else 'Masculino'
+sexo
+from inicia_dados_teste import *
+create_db()
+db
+db.executesql('delete from sqlite_sequence where name='auth_user')
+db.executesql('delete from sqlite_sequence where name='auth_user';)
+db.executesql('delete from sqlite_sequence where name='patient';)
+user = auth.login_bare('teste1@teste.com','123456')
+user
+user.password
+mensagem = [ '1' ]
+mensagem.append('2')
+mensagem
+p = CRYPT('12345')
+p
+dir(p)
+print p
+auth
+dir(auth
+auth.table_token
+auth.is_logged_in()
+db.executesql('delete from auth_user where id>5;')
+db.commit()
+import datetime
+dc = datetime.date(2017,10,10)
+dc
+dc = dc + datetime.timedelta(days = 30)
+dc
+dc = dc + datetime.timedelta(days = 30)
+dc
+import random
+a=[]
+for x in random(1,5,1):
+ a.append(x)
+ print a
+for x in range(1,random(1,5,1)):
+ a.append(x)
+ print a
+random
+random.randint(1,5)
+for x in range(1,random.randint(1,5,1)): a.append(x)
+for x in range(1,random.randint(1,5,1)):
+ a.append(x)
+for x in range(1,random.randint(1,5)):
+ a.append(x)
+a
+for x in range(1,random.randint(1,5)):
+ a.append(x)
+a
+resultados = [{1L: 'Resultado 1 da consulta 1 do usuario 1'}, {4L: 'Resultado 1 da consulta 4 do usuario 1'}, {5L: 'Resultado 1 da consulta 5 do usuario 1'}, {3L: 'Resultado 1 da consulta 3 do usuario 1'}, {6L: 'Resultado 1 da consulta 6 do usuario 1'}, {9L: 'Resultado 1 da consulta 9 do usuario 1'}]
+resultados[0]
+for consulta in db().select(db.consulta.ALL):
+ print consulta.motivo
+ for resultado in consulta.resultado.select()
+ for consulta in db().select(db.consulta.ALL):
+ print consulta.motivo
+ for resultado in consulta.resultado.select():
+  print resultado.resultado
+consulta = db().select(db.consulta.ALL)
+consulta
+consulta[0]
+consulta[0].resultadoconsulta
+user=auth.login_bare('teste1@teste.com','123456')
+user.auth
+auth
+dir(auth)
+dir(auth.user)
+rows = db(db.consulta.id == db.resultadoconsulta.consulta_id).select()
+rows
+for r in rows:
+ print r
+for r in rows:
+r[0]
+rows.first()
+rows = db().select(db.consulta.ALL, db.resultadoconsulta.ALL,
+            left,db.resultadoconsulta(db.consulta.id == db.resultadoconsulta.consulta_id))
+rows = db().select(db.consulta.ALL, db.resultadoconsulta.ALL,
+left=db.resultadoconsulta(db.consulta.id == db.resultadoconsulta.consulta_id))
+rows = db().select(db.consulta.ALL, db.resultadoconsulta.ALL, \
+left=db.resultadoconsulta(db.consulta.id == \ db.resultadoconsulta.consulta_id))
+rows = db().select(db.consulta.ALL, db.resultadoconsulta.ALL,left=db.resultadoconsulta(db.consulta.id == db.resultadoconsulta.consulta_id))
+rows = db().select(db.consulta.ALL,db.resultadoconsulta.ALL,left=db.resultadoconsulta.on(db.consulta.id == db.resultadoconsulta.consulta_id))
+rows
+for row in rows:
+ print row.consulta.id, 'tem', row.resultadoconsulta.resultado
+for row in rows:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+consultas = db().select(
+            db.consulta.auth_id == auth.user.id,
+            db.resultadoconsulta.ALL,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+consultas = db().select(
+            db.consulta.auth_id.ALL,
+            db.resultadoconsulta.ALL,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+consultas = db().select(
+            db.consulta.ALL,
+            db.resultadoconsulta.ALL,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+consultas
+auth
+auth.user.id
+consultas = db().select(
+            db.consulta.auth_id == auth.user.id,
+            db.resultadoconsulta.ALL,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+rows = db(db.consulta.auth_id == auth.user.id).select(db.consulta.ALL,db.resultadoconsulta.ALL,left=db.resultadoconsulta.on(db.consulta.id == db.resultadoconsulta.consulta_id)
+rows = db(db.consulta.auth_id == auth.user.id).select(db.consulta.ALL,db.resultadoconsulta.ALL,left=db.resultadoconsulta.on(db.consulta.id == db.resultadoconsulta.consulta_id))
+rows
+for row in rows:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.auth_id.ALL,
+            db.resultadoconsulta.ALL,
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.ALL,
+            db.resultadoconsulta.ALL,
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+        consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.ALL,
+            db.resultadoconsulta.ALL,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.ALL,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+consultas = db(db.consulta.auth_id == auth.user.id).select
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.ALL,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id))
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+consultas = db((db.consulta.auth_id == auth.user.id) &
+                       (db.consulta.status == status)).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            orderby=db.consulta.status,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id)
+        )
+status='Marcada'
+consultas = db((db.consulta.auth_id == auth.user.id) &
+                       (db.consulta.status == status)).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            orderby=db.consulta.status,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id)
+        )
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+consultas = db((db.consulta.auth_id == auth.user.id) &
+                       (db.consulta.status == status)).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            orderby=db.consulta.status,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id)
+        )
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+for c in consultas:
+ c.id
+consutas
+consultas
+c.consulta.id
+c.resultadoconsulta.id
+c.resultadoconsulta.resultado
+consultas
+for c in consultas:
+ print c.consulta.dataconsulta
+c.consulta.endereco
+for c in consultas:
+ print c.consulta.endereco
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            db.resultadoconsulta.id,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id)
+        )
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+for c in consultas:
+ if c.resultado:
+  print True
+ else:
+  print False
+c
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            db.resultadoconsulta.id,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id)
+        )
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+ consultas.resultadoconsulta
+print consultas.resutadoconsulta
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            db.resultadoconsulta.id,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id),
+            groupby=db.consulta.id
+        )
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+consultas = db(db.consulta.auth_id == auth.user.id).select(
+            db.consulta.id,
+            db.consulta.dataconsulta,
+            db.consulta.status,
+            db.consulta.motivo,
+            db.consulta.endereco,
+            db.consulta.cidade,
+            db.consulta.id,
+            db.resultadoconsulta.resultado,
+            db.resultadoconsulta.id,
+            left=db.resultadoconsulta.on(
+                db.consulta.id == db.resultadoconsulta.consulta_id),
+        #    groupby=db.consulta.id
+        )
+for row in consultas:
+ print 'A consulta ',row.consulta.id, 'tem', row.resultadoconsulta.resultado
+for r in db(db.resultadoconsulta.consulta_id == 2).select():
+ r.resultado
+prin db.consulta.count()
+prin db(db.consulta).count()
+print db(db.consulta).count()
+user=auth.login_bare('teste1@teste.com','123456')
+resultados = db((db.resultadoconsulta.auth_id == auth.user.id)).select()
+for r in resutlados:
+ print r.resultado
+for r in resultados:
+ print r.resultado
+contador=0
+contador+=1
+contador
+divcontador="lista"+str(contador)
+divcontador
+divcontador="lista%s" %(str(contador))
+divcontador
+consulta=2
+resultados = db((db.resultadoconsulta.consulta_id == consulta)).select()
+resultados
+resultados.count()
+len(resultados)
+import datetime
+hoje=datetime.date.today()
+hoje
+v='7.00'
+x=float(v)
+x
+'%.2f' % 7.0
+newer_method_string = "{:.9f}".format(v) 
+for p in db(db.planos).select():
+ print p
+for p in db(db.plano).select():
+ print p
+p=db(db.plano).select().first()
+p
+p.valor
+valor = "0.f" % p.valor
+saldo = ("%.2f" % round(saldo,2))
+valor = ("%.2f" % round(p.valor,2))
+valor
+valor = ("%.2f" % round(p.valor,2))
+valor = valor.replace(".","")
+valor
+fatura_id=1
+fatura = db(db.fatura.fatura_id == fatura_id).select().first()
+fatura = db(db.fatura.id == fatura_id).select().first()
+fatura
+url_moip = 'https://desenvolvedor.moip.com.br/sandbox/PagamentoMoIP.do'
+id_carteira = 'acmorganti@gmail.com'
+plano_valor = db(plano.id == fatura.plano).select().first().valor
+plano_valor = db(db.plano.id == fatura.plano).select().first().valor
+fatura_id=1
+fatura = db(db.fatura.id == fatura_id).select().first()
+url_moip = 'https://desenvolvedor.moip.com.br/sandbox/PagamentoMoIP.do'
+id_carteira = 'acmorganti@gmail.com'
+plano_valor = db(db.plano.id == fatura.plano).select().first().valor
+print fatura
+fatura = db(db.fatura.id == fatura_id).select().first()
+plano_valor = db(db.plano.id == fatura.plano).select().first().valor
+plano_valor
+valor = ("%.2f" % round(plano_valor,2))
+valor = valor.replace(".","")
+valor
+len("Assinatura mensal do Prontumed - Prontuário médico online")
+fatura = db(db.fatura.id == fatura_id).select().first()
+url_moip = 'https://desenvolvedor.moip.com.br/sandbox/PagamentoMoIP.do'
+id_carteira = 'acmorganti@gmail.com'
+plano_valor = db(db.plano.id == fatura.plano).select().first().valor
+valor = ("%.2f" % round(plano_valor,2))
+valor = valor.replace(".","")
+nome = "Assinatura mensal do Prontumed - Prontuário médico online"
+descricao = "Assinatura do plano mensal da Prontumed"
+id_transacao = 'FAT%s' %(str(fatura_id))
+url_moip += '?'
+url_moip += 'id_carteira=%s' %(id_carteira)
+url_moip += 'valor=%s' %(valor)
+url_moip += 'nome=%s' %(nome)
+url_moip += 'descricao=%s' %(descricao)
+url_moip += 'id_transacao=%s' %(id_transacao)
+print url_moip
+import requests
+import json
+import requests
+user=auth.login_bare('teste1@teste.com','123456')
+assinatura = db(db.assinatura.auth_id == auth.user.id).select().first()
+assinatura
+print assinatura
+user=auth.login_bare('teste2@teste.com','123456')
+assinatura = db(db.assinatura.auth_id == auth.user.id).select().first()
+print assinatura
+x = assinatura.plano_id if (assinatura.plano_id == None) else "Demo"
+x
+print x
+assinatura.plano_id
+print assinatura.plano_id
+x = assinatura.plano_id if (assinatura.plano_id != None) else "Demo"
+print assinatura.plano_id
+x
+import datetime
+v = datetime.date.today() + datetime.timedelta(months = 1)
+v = datetime.date.today() + datetime.timedelta(month = 1)
+r = db(db.resposta_recebimento).select().last()
+r
+db.resposta_recebimento.insert(id_transacao='FAT1')
+db.commit()
+r = db(db.resposta_recebimento).select().last()
+r
+fatura_id=db.resposta_recebimento.insert(id_transacao='FAT1')
+fatura_id
+rid= fatura_id
+pag = db(db.resposta_recebimento.id==r.id).select().first()
+pag
+fatura_id=pag.id_transacao
+fatura_id
+fatura_id = int(fatura_id[3:])
+fatura_id
+fatura = db(db.fatura.id == fatura_id).select().first()
+fatura
+f=db.fatura.insert(auth_id=1)
+db.commit()
+f
+fatura
+fatura = db(db.fatura.id == f).select().first()
+fatura
+fatura.update_record(status='Pago')
+fatura.plano
+db.rollback()
+user=auth.login_bare('teste1@teste.com','123456')
+total = db(db.consulta.auth_id == auth.user.id).count()
+total
+consultas_per_page = 5
+pages = total / consultas_per_page
+if total%pages:
+        consultas_per_page += 1
+consultas_per_page
+if not request.vars.page:
+        redirect(URL(vars={'page':1}))
+    else:
+        page = int(request.vars.page)
+if not request.vars.page:
+        redirect(URL(vars={'page':1}))
+else:
+        page = int(request.vars.page)
+page=1
+start = (page-1)*consultas_per_page
+start
+end = page*posts_per_page

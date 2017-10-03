@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+  <div class="container">
+    <h3> Editar Resultado de Consulta</h3>
+    <button onclick="goBack()">Voltar</button>
+  </div>
+  <script>
+  function goBack() {
+      window.history.back()
+  }
+  </script>
+{{end}}
+
+{{block principal}}
+	<div class="container container-fluid main-container">
+
+	 	{{=form}}
+
+  </div>
+{{end}}

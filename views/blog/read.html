@@ -1,0 +1,19 @@
+{{extend "layout.html"}}
+{{block header}}
+  <script>
+  function goBack() {
+      window.history.back()
+  }
+  </script>
+{{end}}
+{{block center}}
+  <div class="container">
+    <button onclick="goBack()">Voltar</button><br /><br />
+    {{=XML(post, sanitize=False,
+        permitted_tags=['a', 'b', 'blockquote', 'br/', 'i', 'li',
+           'ol', 'ul', 'p', 'cite', 'code', 'pre', 'img/'],
+        allowed_attributes={'a':['href', 'title'],
+           'img':['src', 'alt'], 'blockquote':['type']})}}
+
+    </div>
+{{end}}

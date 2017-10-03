@@ -1,0 +1,29 @@
+{{extend 'layout.html'}}
+{{ if mensagem: }}
+	<p style="color: red;">{{=mensagem}}</p>
+{{pass}}
+{{block left_sidebar}}
+	<h3> </h3>
+{{end}}
+
+{{block principal}}
+	<div class="container container-fluid main-container">
+		<h2>{{=nome_perfil}}</h2>
+
+	 	{{=form}}
+
+	{{end}}
+
+	<script type="text/javascript" charset=”utf-8″>
+    jQuery(document).ready(function(){
+      jQuery('#endereco_cep').blur(function(){
+        jQuery('#endereco_endereco').val('Carregando');
+        jQuery('#endereco_bairro').val('Carregando');
+        jQuery('#endereco_cidade').val('Carregando');
+        jQuery('#endereco_complemento').val('Carregando');
+        ajax('{{=URL('endereco_auto', 'preenche_cep')}}', ['cep','dbperfil'], ':eval');
+      });
+    });
+  </script>
+
+</div>

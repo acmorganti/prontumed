@@ -1,0 +1,15 @@
+
+<div>
+{{=form}}
+<script type="text/javascript" charset=”utf-8″>
+  jQuery(document).ready(function(){
+    jQuery('#exame_cep').blur(function(){
+      jQuery('#exame_endereco').val('Carregando');
+      jQuery('#exame_bairro').val('Carregando');
+      jQuery('#exame_cidade').val('Carregando');
+      jQuery('#exame_complemento').val('Carregando');
+      ajax('{{=URL('endereco_auto', 'preenche_cep')}}', ['cep','dbperfil'], ':eval');
+    });
+  });
+</script>
+</div>
